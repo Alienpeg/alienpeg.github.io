@@ -1,0 +1,222 @@
+<!-- The actual work continues from FullNavBar2. to make the drop down look like the playstation dropdown color -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shergio International</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mystyle.css">
+  <link rel="stylesheet" href="test.css">
+  <script src="jquery-3.3.1.min.js"></script>
+</head>
+
+<body class="bg-gray-100 ">
+  <header class="bg-white lg:px-32 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3 border-b border-mgray2">
+    <div class="flex items-center justify-between px-4 py-3 sm:p-0">
+      <div class="">
+        <img class="h-8" src="img/shergio_logo.jpg" alt="Shergio International">
+      </div>
+      <div class="sm:hidden">
+        <button class="hover:text-black text-black focus:text-black focus:outline-none" id="menuToggle">
+          <svg class="w-6 h-6 fill-current block" id="burger" viewBox="0 0 20 20">
+            <!--burger button-->
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z">
+            </path>
+          </svg>
+          <svg class="w-6 h-6 fill-current hidden" id="close" stroke="currentColor" viewBox="0 0 24 24">
+            <!--close button-->
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- NAVBAR LINKS -->
+    <nav class="px-2 pt-2 pb-4 hidden sm:flex sm:p-0 items-center" id="navlink">
+      <a href="#"
+        class="relative z-10 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 menu">Audience</a>
+      <!-- link+dropdown div -->
+      <div class="relative z-10">
+        <a href="#"
+          class="flex items-center block sm:ml-2 px-2 py-1 font-semibold font-mfont rounded text-mblack hover:text-mblue menu"
+          x="new">
+          <span>First</span>
+          <svg class="w-6 h-6 fill-current block hover:text-inherit text-mgray" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </a>
+        <!-- dropdown div -->
+        <div style="margin-top: 0.8rem;"
+          class="absolute hidden mt-2 pt-2 pb-3 px-2 w-48 bg-white shadow-mshadow2 secMenu" x="new" o="closed">
+          <a class="block px-2 py-1 text-gra-800 hover:shadow-mshadow rounded-mrounded" href="#">Account
+            Settings</a>
+          <a class="block px-2 py-1 text-gra-800 hover:shadow-mshadow rounded-mrounded" href="#">Support</a>
+          <a class="block px-2 py-1 text-gra-800 hover:shadow-mshadow rounded-mrounded" href="#">Sign out</a>
+        </div>
+      </div>
+      <a href="#"
+        class="relative z-10 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:ml-2 menu">Satellites</a>
+      <a href="#"
+        class="relative z-10 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:ml-2 menu">Blushes</a>
+      <a href="#"
+        class="relative z-10 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:ml-2 menu">Contacts</a>
+      <div class="relative z-10">
+        <a href="#" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:ml-2 menu"
+          x="new2">New</a>
+        <div class="absolute hidden right-0 mt-2 py-2 w-48 bg-white rounded-lg secMenu" x="new2" o="closed">
+          <a class="block px-4 py-1 text-gra-800 hover:bg-indigo-500 hover:text-white" href="#">Account Settings</a>
+          <a class="block px-4 py-1 text-gra-800 hover:bg-indigo-500 hover:text-white" href="#">Support</a>
+          <a class="block px-4 py-1 text-gra-800 hover:bg-indigo-500 hover:text-white" href="#">Sign out</a>
+        </div>
+      </div>
+
+      <!-- dropdown.html div -->
+      <div class="relative ml-6">
+        <button
+          class="relative z-10 block h-8 w-8 rounded-full overflow-hidden border-2 border-gray-600 focus:outline-none focus:border-white menu"
+          x="account">
+          <img class="h-full w-full object-cover" src="img/logo.png" alt="account">
+        </button>
+        <button class="fixed hidden inset-0 h-full w-full bg-black opacity-0 cursor-default" id="face"
+          tabindex="-1"></button>
+        <div class="absolute hidden right-0 mt-2 py-2 w-48 bg-white rounded-lg secMenu" x="account" o="closed">
+          <a class="block px-4 py-1 text-gra-800 hover:bg-indigo-500 hover:text-white" href="#">Account Settings</a>
+          <a class="block px-4 py-1 text-gra-800 hover:bg-indigo-500 hover:text-white" href="#">Support</a>
+          <a class="block px-4 py-1 text-gra-800 hover:bg-indigo-500 hover:text-white" href="#">Sign out</a>
+        </div>
+      </div>
+    </nav>
+    <!--end of NAVBAR-->
+  </header>
+  <!--end of HEADER-->
+
+
+  <!-- test -->
+  <div id="n">
+    <div id="b">play</div>vv
+  </div>
+  <div class="spy play" id=now h=kk>fast</div>
+  <div class="clean look play lark" pl=l>slow <div class="fork sane">kiss</div>
+  </div>
+  <br><br>
+  <div class="bg-white w-64 h-mspacing ml-16 relative border-blue-600 border">
+    <div
+      class=" w-20 h-20 mx-auto mt-20 border-b rounded-none hover:shadow-mshadow2 hover:border px-2 pt-1 text-sm text-gray-700">
+      contact
+    </div>
+    <div
+      class=" w-20 h-20 mx-auto mt-20 border-b rounded-msubmenu hover:shadow-mshadow hover:border px-2 pt-1 text-sm text-gray-700">
+      contact
+    </div>
+
+  </div>
+
+  <footer class="absolute bottom-0 left-0 right-0 h-24 bg-mfooter border border-mfooter">
+    <div class="w-48 text-mfootertext mx-auto mt-6">&copy; 2020. All rights reserved.</div>
+  </footer>
+
+  <script>
+
+    $(function () {
+      //main dropdown menu toggle
+      var isOpened = false;
+      $("#menuToggle").click(function () {
+        if (isOpened === false) {
+          isOpened = true;
+          $("#navlink").animate({ height: "toggle" }, {
+            complete: function () {
+              $(this).attr('style', "");
+              $("#navlink").removeClass("hidden").addClass("block");
+            }
+          });
+          $("#burger").removeClass("block").addClass("hidden");
+          $("#close").removeClass("hidden").addClass("block");
+        }
+        else if (isOpened === true) {
+          isOpened = false;
+          $("#navlink").animate({ height: "toggle" }, {
+            complete: function () {
+              $(this).attr('style', "");
+              $("#navlink").removeClass("block").addClass("hidden");
+            }
+          });
+          $("#close").removeClass("block").addClass("hidden");
+          $("#burger").removeClass("hidden").addClass("block");
+        }
+      });
+
+      //secondary dropdown menu toggle
+      /*used class .menu instead of id because this is going to be a generic code that will handle clicks from all main menu links using id will only make it 
+      possible for one element since ids are unique to elements, except a wild id selector is used. So all main menu items will be given a class of .menu.
+      Before opening any secondary menu, all secondary menu needs to be closed in case any is opened before, before opening the secondary menu.
+      So all secondary menu will have a class of .secMenu.
+      To know which secondary menu to open in response to the corresponding clicked main menu element another attribute "x" with unique value is added to each menu/secMenu 
+      pair. Id is not used as it can only work for one element, class is not used too because it may contain several value and we need to pull that unique value
+      for the menu/secMenu pair when the element is clicked. This has to be done with an attribute with one value as we don't know what we are looking for specifically.
+      So contact main menu and its secondary dropdown menu for example will have a class of contact. To target the secondary menu only selector that target an element with 
+      class: contact and secMenu. If there is any need to target the contact main menu it self, use a selector that target an element with class: and class:
+      Each menu dropdown will be given an id. 
+      The o attribute is added on secMenu to have the value opened or closed to enable a menu link, when clicked, to close its secmenu if it is already opened. */
+
+      //reusable function to close menu since its used more than once
+      function closeSecMenu() {
+        $(".secMenu").removeClass("block").addClass("hidden");
+        $(".secMenu").attr("o", "closed");
+        $("#face").removeClass("block").addClass("hidden");
+      }
+
+      $(".menu").click(function () {
+        //get the x attribute of the clicked element
+        var x = $(this).attr('x');
+        //use the x attribute to find the corresponding dropdown menu and get the value of its o attribute
+        var secIsOpened = $(".secMenu[x=" + x + "]").attr("o");
+        //alert(secIsOpened === "closed");
+
+
+
+        if (secIsOpened === 'opened') {
+          //if the o attribute has a value of opened then close the menu
+          //close all secondary menu
+          closeSecMenu();
+        }
+        else {
+          //if the o attribute has a value that != opened, then open then close all secmenu and open the corresponding menu (when menu with secmenu is clicked). 
+          //When menu with no secmenu is clicked it will only close all secmenu and there will be no secmenu to close, x variable will probably be undefined
+          //first close all secondary menu
+          closeSecMenu();
+          //open the corresponding secondary menu
+          if (x !== undefined) {
+            //this if is added to prevent the overlay (#face) from coming up when a menu without secmenu is clicked on so it dont block the screen
+            $(".secMenu[x=" + x + "]").removeClass("hidden").addClass("block");
+            $(".secMenu[x=" + x + "]").attr("o", "opened");
+            $("#face").removeClass("hidden").addClass("block");
+          }
+        }
+      });
+
+      //when the overlay is clicked, close the secMenu
+      $("#face").click(function () {
+        closeSecMenu();
+      });
+      //when the escape button is pressed, close the secMenu
+      $(document).keydown(function (e) {
+        if (e.which == 27) {
+          closeSecMenu();
+        }
+      });
+
+      //test
+      $(".spy").click(function (e) {
+        alert(e.target.getAttribute('h'));
+      });
+      $(".clean[pl=\"l\"]").addClass("bg-red-500");
+
+    })
+  </script>
+</body>
+
+</html>

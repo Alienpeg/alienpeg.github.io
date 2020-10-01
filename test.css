@@ -1,0 +1,21 @@
+#n:hover{
+  color: yellow;
+}
+#b{
+  width: 70px;
+  color:green;
+  background-color: #820062;
+}
+
+
+#n{
+  width: 130px;
+  background-color: #180082;
+}
+#b:hover{
+  color: red;
+}
+#n:hover #b{
+  color: yellow;
+}
+
