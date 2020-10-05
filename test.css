@@ -19,3 +19,69 @@
   color: yellow;
 }
 
+
+.f{
+  font-family:   helvetica, arial, "sans-serif";
+  color: rgb(91, 157, 16)
+}
+
+#services{
+  background-image: url('img/scene.jpg');
+  background-repeat: no-repeat;
+  z-index: -21;
+}
+.trans{
+  opacity: 0.82;
+  z-index: -20;
+}
+.services-top-bg{
+  height: 370px;
+  margin-bottom: -50px;
+}
+
+.underline{
+  height: 2px;
+  width:100px
+}
+.underline div{
+  width: 50px;
+}
+body{
+  font-family: PT Sans, sans-serif;
+}
+
+.arrow{
+  background-image: url('img/arrowhead.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.backb{
+  background-image: url('img/blue.png');
+}
+.backg{
+  background-image: url('img/green.png');
+}
+.svlist{
+  height: 20px;
+}
+
+.thumb img:hover{
+  transform: scale(1.1);
+}
+.thumb img{
+  transition: all 0.3s ease 0s;
+}
+.arrowdiv{
+  height: 200px;
+  width: 200px;
+}
+.arrowdiv .desc{
+  font-size: 14px;
+}
+.col-block{
+  width:400px;
+}
+footer a:hover{
+  color: rgb(0, 112, 209);
+}
