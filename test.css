@@ -27,14 +27,15 @@
 #services{
   background-image: url('img/tutor.jpg');
   background-repeat: no-repeat;
+  background-position: center -200px;
   background-size: cover;
   z-index: -21;
 }
 #why{
   background-image: url('img/scene.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center -200px;
+  background-size: cover;
   z-index: -21;
 }
 .trans{
