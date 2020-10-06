@@ -24,10 +24,17 @@
   font-family:   helvetica, arial, "sans-serif";
   color: rgb(91, 157, 16)
 }
-
 #services{
   background-image: url('img/scene.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -21;
+}
+#why{
+  background-image: url('img/tutor.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -200px;
   z-index: -21;
 }
 .trans{
