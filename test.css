@@ -84,6 +84,7 @@ body{
   border-width: 1px;
 }
 .arrowdiv{
+  display: block;
   width: 200px;
   height: 220px;
   vertical-align: top;
@@ -121,8 +122,14 @@ footer a:hover{
 }
 /* sm */
 @media (min-width: 640px){
+  .arrowdiv{
+    display: inline-block;
+  }
   .svlist_all {
     width: 1247px;
+  }
+  .arr-sec{
+    width:595.4px;
   }
 }
 
