@@ -7,7 +7,6 @@
   background-color: #820062;
 }
 
-
 #n{
   width: 130px;
   background-color: #180082;
@@ -30,6 +29,7 @@
   background-position: center -200px;
   background-size: cover;
   z-index: -21;
+  width: 1496;
 }
 #why{
   background-image: url('img/scene.jpg');
@@ -46,10 +46,6 @@
   opacity: 0.82;
   z-index: -20;
 }
-.services-top-bg{
-  height: 370px;
-  margin-bottom: -50px;
-}
 
 .underline{
   height: 2px;
@@ -61,21 +57,15 @@
 body{
   font-family: PT Sans, sans-serif;
 }
-
-.arrow{
-  background-image: url('img/arrowhead.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.backb{
-  background-image: url('img/blue.png');
-}
-.backg{
-  background-image: url('img/green.png');
-}
 .svlist{
-  height: 20px;
+  position: relative;
+  top: -24px;
+  transform: translateY(-50%);
+  margin-left: 30px;
+  width: 140px;
+}
+.svlist_all{
+  
 }
 
 .thumb img:hover{
@@ -84,11 +74,28 @@ body{
 .thumb img{
   transition: all 0.3s ease 0s;
 }
+.arrow-icon-block{
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60px;
+  height: 60px;
+  border-color: rgb(0, 112, 209);
+  border-width: 1px;
+}
 .arrowdiv{
-  height: 200px;
   width: 200px;
+  height: 220px;
+  vertical-align: top;
+  border-color: rgb(0, 112, 209);
+  border-width: 1px;
+  margin-left: -4.5px;
+}
+.arr_ico{
+  margin-top: 10px;
 }
 .arrowdiv .desc{
+  margin-top: -12px;
   font-size: 14px;
 }
 .col-block{
@@ -97,3 +104,25 @@ body{
 footer a:hover{
   color: rgb(0, 112, 209);
 }
+
+#join-tutor {
+  background-color: #031B4E;
+  color: white;
+  height: 200px; 
+}
+#join-tutor button {
+  background-color: #2176FE;
+}
+.centerxy{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* sm */
+@media (min-width: 640px){
+  .svlist_all {
+    width: 1247px;
+  }
+}
+

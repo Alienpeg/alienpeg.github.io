@@ -413,23 +413,6 @@ img {
   text-align: center;
 }
 
-.arrowdiv{
-  position: relative;
-  --text-opacity: 1;
-  color: #fff;
-  color: rgba(255, 255, 255, var(--text-opacity));
-}
-
-.svlist{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 100%;
-}
-
 @media (min-width: 640px){
   .center {
     width: 80%;
@@ -478,15 +461,6 @@ img {
   background-color: #fff;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
   flex-grow: 1;
-}
-
-.arrowlogo{
-  display: block;
-  width: 8rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1rem;
-  font-size: 2.25rem;
 }
 
 .bg-black{
@@ -563,6 +537,10 @@ img {
   border-radius: 0.25rem;
 }
 
+.rounded-md{
+  border-radius: 0.375rem;
+}
+
 .rounded-lg{
   border-radius: 0.5rem;
 }
@@ -611,6 +589,10 @@ img {
   display: none;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .items-center{
   align-items: center;
 }
@@ -639,6 +621,10 @@ img {
   font-family: Verdana, Arial, Helvetica;
 }
 
+.font-semibold{
+  font-weight: 600;
+}
+
 .h-5{
   height: 1.25rem;
 }
@@ -661,6 +647,14 @@ img {
 
 .text-lg{
   font-size: 1.125rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
 }
 
 .text-3xl{
@@ -761,6 +755,11 @@ img {
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-24{
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .pt-2{
@@ -898,6 +897,10 @@ img {
 
 .w-4\/5{
   width: 80%;
+}
+
+.w-5\/6{
+  width: 83.333333%;
 }
 
 .w-full{
