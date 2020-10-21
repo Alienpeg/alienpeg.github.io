@@ -25,8 +25,8 @@
 }
 #services{
   background-image: url('img/tutor.jpg');
-  background-repeat: no-repeat;
-  background-position: center -200px;
+  background-repeat: repeat;
+  background-position: center 0px;
   background-size: cover;
   z-index: -21;
   width: 1496;
@@ -86,11 +86,12 @@ body{
 .arrowdiv{
   display: block;
   width: 200px;
-  height: 220px;
+  height: 228px;
   vertical-align: top;
   border-color: rgb(0, 112, 209);
   border-width: 1px;
   margin-left: -4.5px;
+  padding-top: 8px;
 }
 .arr_ico{
   margin-top: 10px;
@@ -105,7 +106,6 @@ body{
 footer a:hover{
   color: rgb(0, 112, 209);
 }
-
 #join-tutor {
   background-color: #031B4E;
   color: white;
@@ -120,16 +120,31 @@ footer a:hover{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.arr-sec{
+  display: inline-block;
+}
+
 /* sm */
 @media (min-width: 640px){
+  .arr-sec{
+    width:595.4px;
+    display:block;
+  }
   .arrowdiv{
     display: inline-block;
   }
+}
+
+/* md */
+@media (min-width: 768px){
   .svlist_all {
     width: 1247px;
   }
   .arr-sec{
     width:595.4px;
+  }
+  .arrowdiv{
+    display: inline-block;
   }
 }
 
