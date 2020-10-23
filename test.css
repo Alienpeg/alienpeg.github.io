@@ -1,27 +1,9 @@
-#n:hover{
-  color: yellow;
-}
-#b{
-  width: 70px;
-  color:green;
-  background-color: #820062;
-}
+@charset "utf-8";
+.pg{
 
-#n{
-  width: 130px;
-  background-color: #180082;
 }
-#b:hover{
-  color: red;
-}
-#n:hover #b{
-  color: yellow;
-}
+.inpg{
 
-
-.f{
-  font-family:   helvetica, arial, "sans-serif";
-  color: rgb(91, 157, 16)
 }
 #services{
   background-image: url('img/tutor.jpg');
@@ -111,9 +93,6 @@ footer a:hover{
   color: white;
   height: 200px; 
 }
-#join-tutor button {
-  background-color: #2176FE;
-}
 .centerxy{
   position: absolute;
   top: 50%;
@@ -122,6 +101,17 @@ footer a:hover{
 }
 .arr-sec{
   display: inline-block;
+}
+/* less than 639 */
+@media (max-width: 639px){
+
+  .foo{
+
+  }
+  .foo>div{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* sm */
@@ -137,14 +127,17 @@ footer a:hover{
 
 /* md */
 @media (min-width: 768px){
+  .pg{
+    min-width: 1230px;
+  }
   .svlist_all {
-    width: 1247px;
+    width: 1196px; /*1247 */
   }
   .arr-sec{
     width:595.4px;
+    display: inline-block;
   }
   .arrowdiv{
     display: inline-block;
   }
 }
-
