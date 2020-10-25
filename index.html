@@ -1,0 +1,430 @@
+<!-- continues FullNavBar3. To make the navbar and drop down look like forex and take the shergio logo up like pureweb-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shergio International Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="test.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/a632e467c0.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-200">
+  <div class="pg">
+    <!-- shergio black top bar -->
+    <div class="black-top-bar flex items-center justify-end h-8 pr-2 text-white bg-mblack2 cursor-default">
+      <span>
+        <!-- shergio span -->
+        <span class="inline-block">Shergio International Academy</span>
+        <!-- call span -->
+        <div class="inline-block ml-4">
+          <svg class="w-5 h-5 inline-block" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+            </path>
+          </svg>
+          07018524555
+        </div>
+      </span>
+    </div>
+    <header class="shadow-mshadow bg-white lg:px-32 md:flex md:justify-between md:items-center md:px-4 md:py-3">
+      <div class="flex items-center justify-between px-4 py-3 md:p-0">
+        <div class="">
+          <img class="h-8" src="img/shergio_logo.jpg" alt="Shergio International">
+        </div>
+        <div class="hidden md:hidden">
+          <button class="text-mblack2 hover:text-mblue focus:outline-none" id="menuToggle">
+            <!--burger button-->
+            <svg class="w-6 h-6 fill-current block" id="burger" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z">
+              </path>
+            </svg>
+            <!--close button-->
+            <svg class="w-6 h-6 fill-current hidden" id="close" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- NAVBAR LINKS -->
+      <nav class="px-2 pt-2 pb-4 hidden md:flex md:p-0 items-center" id="navlink">
+        <a href="#"
+          class="relative z-10 flex items-center md:ml-2 px-2 py-1 font-mfont3 rounded text-mblack hover:text-mblue menu"
+          x="nil">Audience
+        </a>
+        <!-- link+dropdown div -->
+        <div class="relative z-10">
+          <a href="#" class="flex items-center md:ml-2 px-2 py-1 font-mfont3 rounded text-mblack hover:text-mblue menu"
+            x="new">Curriculum
+            <svg class="w-6 h-6 fill-current block hover:text-inherit text-mgray caret" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+          <!-- dropdown div -->
+          <div class="absolute hidden right-0 mt-2 py-2 w-48 bg-white rounded-lg secMenu" x="new" o="closed">
+            <a class="block px-4 py-1 text-gra-800 hover:bg-mblue_ad hover:text-white" href="#">Account Settings</a>
+            <a class="block px-4 py-1 text-gra-800 hover:bg-mblue_ad hover:text-white" href="#">Support</a>
+            <a class="block px-4 py-1 text-gra-800 hover:bg-mblue_ad hover:text-white" href="#">Sign out</a>
+          </div>
+        </div>
+        <a href="#"
+          class="relative z-10 flex items-center md:ml-2 px-2 py-1 font-mfont3 rounded text-mblack hover:text-mblue menu"
+          x="nil">Grades
+        </a>
+        <a href="#"
+          class="relative z-10 flex items-center md:ml-2 px-2 py-1 font-mfont3 rounded text-mblack hover:text-mblue menu"
+          x="nil">Lessons
+        </a>
+        <a href="#"
+          class="relative z-10 flex items-center md:ml-2 px-2 py-1 font-mfont3 rounded text-mblack hover:text-mblue menu"
+          x="nil">Contact
+        </a>
+        <div class="relative z-10">
+          <a href="#" class="flex items-center md:ml-2 px-2 py-1 font-mfont3 rounded text-mblack hover:text-mblue menu"
+            x="new2">About us
+            <svg class="w-6 h-6 fill-current block hover:text-inherit text-mgray caret" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+          <!-- dropdown div -->
+          <div class="absolute hidden right-0 mt-2 py-2 w-48 bg-white rounded-lg secMenu" x="new2" o="closed">
+            <a class="block px-4 py-1 text-gra-800 hover:bg-mblue_ad hover:text-white" href="#">Account Settings</a>
+            <a class="block px-4 py-1 text-gra-800 hover:bg-mblue_ad hover:text-white" href="#">Support</a>
+            <a class="block px-4 py-1 text-gra-800 hover:bg-mblue_ad hover:text-white" href="#">Sign out</a>
+          </div>
+        </div>
+
+        <!-- dropdown.html div -->
+        <div class="relative ml-6">
+          <button
+            class="relative z-10 block h-8 w-8 rounded-full overflow-hidden border-2 border-gray-600 focus:outline-none hover:border-mblue menu"
+            x="account">
+            <img class="h-full w-full object-cover" src="img/logo.png" alt="account">
+          </button>
+          <button class="fixed hidden inset-0 h-full w-full bg-black opacity-0 cursor-default" id="face"
+            tabindex="-1"></button>
+          <div class="absolute hidden right-0 mt-2 py-2 w-48 bg-white rounded-lg secMenu" x="account" o="closed">
+            <a class="block px-4 py-1 text-gra-800 hover:bg-mblue_ad hover:text-white" href="#">Account Settings</a>
+            <a class="block px-4 py-1 text-gra-800 hover:bg-mblue_ad hover:text-white" href="#">Support</a>
+            <a class="block px-4 py-1 text-gra-800 hover:bg-mblue_ad hover:text-white" href="#">Sign out</a>
+          </div>
+        </div>
+      </nav>
+      <!--end of NAVBAR-->
+    </header>
+    <!--end of HEADER-->
+
+    <!-- content -->
+    <section class="mt-0 ">
+      <img style="" class="first-img h-full w-full object-cover" src="img/class_empty.jpg" alt="">
+    </section>
+
+    <!-- a glance on our services -->
+    <section id="services" class="relative mt-0 md:mt-24 pb-6 text-white">
+      <div class="absolute inset-0 w-full h-full bg-black trans"></div>
+      <div class="border-t border-transparent">
+        <h2 class="inpg mt-12 sm:text-4xl">A GLANCE ON OUR SERVICES</h2>
+        <!-- underline -->
+        <div class="underline flex mx-auto mt-3">
+          <div class="bg-mblue"></div>
+          <div class="bg-white"></div>
+        </div>
+        <p class="inpg mt-6 text-lg">Shergio International Academy Ltd is set up to bridge the
+          service gap in the Education sector. We do this by connecting clients that require tutoring services to their
+          Skill providers (Tutors, Trainers, Instructors and skilled personnel).</p>
+        <div class="svlist_all mt-4 w-5/6 mx-auto text-center sm:w-full">
+          <div class="arr-sec sm:mx-auto">
+            <div class="arrowdiv">
+              <div class="arrow-icon-block"><i style="padding-top: 5px; font-size: 50px;" class="fa fa-desktop"></i></div>
+              <img class="w-full arr_ico" src="img/blue.png" />
+              <div class="svlist">School Subjects</div>
+              <div class="desc px-5">We teach all subjects for all Primary and Secondary School grades</div>
+            </div>
+            <div class="arrowdiv">
+              <div class="arrow-icon-block"><i style="padding-top: 5px; font-size: 50px;" class="fa fa-desktop"></i></div>
+              <img class="w-full arr_ico" src="img/green.png" />
+              <div class="svlist">PROGRAMMING</div>
+              <div class="desc px-5">We teach C++, JavaScript, HTML, PHP, C# programming languages</div>
+            </div>
+            <div class="arrowdiv">
+              <div class="arrow-icon-block"><img class="w-4/5 block mx-auto" src="img/my.png"></div>
+              <img class="w-full arr_ico" src="img/blue.png" />
+              <div class="svlist">WAEC/NECO/GCE</div>
+              <div class="desc px-5">We prepare you for O Level Exams to pass with flying colours</div>
+            </div>
+          </div>
+          <div class="arr-sec sm:mx-auto">
+            <div class="arrowdiv">
+              <div class="arrow-icon-block"><img class="w-4/5 block mx-auto" src="img/my.png"></div>
+              <img class="w-full arr_ico" src="img/green.png" />
+              <div class="svlist">JAMB/SAT</div>
+              <div class="desc px-5">More content contents contents contents contents contents</div>
+            </div>
+            <div class="arrowdiv">
+              <div class="arrow-icon-block"><img class="w-4/5 block mx-auto" src="img/my.png"></div>
+              <img class="w-full arr_ico" src="img/blue.png" />
+              <div class="svlist">IELTS/TOEFL/GMAT</div>
+              <div class="desc px-5">More content contents contents contents contents contents</div>
+            </div>
+            <div class="arrowdiv">
+              <div class="arrow-icon-block"><i style="padding-top: 5px; font-size: 50px;" class="fa fa-desktop"></i></div>
+              <img class="w-full arr_ico" src="img/green.png" />
+              <div class="svlist">Language Classes</div>
+              <div class="desc px-5">More content contents contents contents contents contents</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- All primary and secondary subjects -->
+    <section id="all" class="mt-24 pb-6 sec-gap">
+      <h2 class="inpg sm:text-3xl">WE TEACH ALL PRIMARY AND SECONDARY GRADES</h2>
+      <div class="inpg text-center">
+        <!-- line div -->
+        <div class="thumb-sec md:flex items-center justify-around md:w-full">
+          <div class="card">
+            <div class="thumb"><img src="img/english.png" alt=""></div>
+            <div>
+              <span>Mathematics</span>
+              <div class="desc text-center"> <span class="card-topic">LCM</span> <span class="card-topic">Partial
+                  Fraction
+                  </class=><span class="card-topic">Integration</span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb"><img src="img/english.png" alt=""></div>
+            <div>
+              <span>English Language</span>
+              <div class="desc text-center"> <span class="card-topic">Phonetics</span> <span class="card-topic">Essay
+                  </class=><span class="card-topic">Speech</span></div>
+            </div>
+          </div>
+          <div class="card xxx">
+            <div class="thumb"><img src="img/english.png" alt=""></div>
+            <div>
+              <span>Business & Commerce</span>
+              <div class="desc text-center"> <span class="card-topic">Exchange</span> <span class="card-topic">Banking
+                  </class=><span class="card-topic">Economy</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- line div -->
+        <div class="thumb-sec md:flex items-center justify-around md:w-full">
+          <div class="card">
+            <div class="thumb"><img src="img/english.png" alt=""></div>
+            <div>
+              <span>Arts</span>
+              <div class="desc text-center"> <span class="card-topic">Freehand</span> <span class="card-topic">Partial
+                  Drawing
+                  </class=><span class="card-topic">Culture</span></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb"><img src="img/english.png" alt=""></div>
+            <div>
+              <span>Physics</span>
+              <div class="desc text-center"> <span class="card-topic">LCM</span> <span class="card-topic">Magnetism
+                  Velocity
+                  </class=><span class="card-topic">Gravity</span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb"><img src="img/english.png" alt=""></div>
+            <div>
+              <span>Biology</span>
+              <div class="desc text-center"> <span class="card-topic">Digestion</span> <span class="card-topic">Anatomy
+                  </class=><span class="card-topic">Skeleton</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why" class="relative mt-24 pb-6 text-white sec-gap">
+      <div class="absolute inset-0 w-full h-full bg-black trans"></div>
+      <div class="border-t border-transparent">
+        <div style="width: 60%" class="inpg flex items-center mt-12">
+          <span class="h-rule"></span>
+          <h2 class="inline px-4 sm:text-4xl">WHY CHOOSE US</h2>
+          <span class="h-rule"></span>
+        </div>
+        <!-- underline -->
+        <div class="underline flex mx-auto mt-3">
+          <div class="bg-mblue"></div>
+          <div class="bg-white"></div>
+        </div>
+        <p class="inpg mt-6 text-lg">We are an International and Excellent Academy. And the reasons include but not
+          limited to the following:</p>
+        <!-- why choose us lists -->
+        <ul class="sm:flex items-top justify-around mt-4 sm:w-4/5 mx-auto pt-4">
+          <div class="col-block w-4/5">
+            <li class="flex items-center justify-start pb-8"><span class="bg-mblue rounded-full p-3"><i
+                  class="fa fa-hospital"></i></span> <span class="inline-block pl-3">Our tutors are experienced and
+                carefully
+                selected from recommendations and well assessed
+                before deployment for engagement with clients.</span> </li>
+            <li class="flex items-center justify-start pb-8"><span class="bg-mblue rounded-full p-3"><i
+                  class="fa fa-hospital"></i></span> <span class="inline-block pl-3">We have tutors to meet your
+                specific
+                needs.</span> </li>
+            <li class="flex items-center justify-start pb-8"><span class="bg-mblue rounded-full p-3"><i
+                  class="fa fa-hospital"></i></span> <span class="inline-block pl-3">We maximize your learning with our
+                personalized sessions.</span> </li>
+          </div>
+          <div class="col-block w-4/5">
+            <li class="flex items-center justify-start pb-8"><span class="bg-mblue rounded-full p-3"><i
+                  class="fa fa-hospital"></i></span> <span class="inline-block pl-3">We offer both individual and group
+                sessions on various subjects, and we adapt our method
+                of teaching to your learning style.</span> </li>
+            <li class="flex items-center justify-start pb-8"><span class="bg-mblue rounded-full p-3"><i
+                  class="fa fa-hospital"></i></span> <span class="inline-block pl-3">Classes can be taken online or
+                offline
+                depending on client's preference.</span> </li>
+          </div>
+        </ul>
+      </div>
+    </section>
+
+    <!-- JOIN TUTOR -->
+    <section id="join-tutor" class="relative mt-20 sec-gap">
+      <div class="text-center centerxy text-2xl">
+        Want to be one of Our Tutors?
+        <button class="reg block mx-auto mt-6 rounded-md text-xl px-24 py-2 font-semibold bg-mbluereg">Register</button>
+      </div>
+    </section>
+
+    <footer id='footer' class="text-mgray2 bg-mfooter py-6 mt-24 bg-footer text-center sec-gap">
+      <div class="foo sm:w-4/5 mx-auto px-4 sm:flex items-center justify-between">
+        <div>&copy; 2020. All rights reserved.</div>
+        <div class="flex items-center justify-center px-4 social-links ">
+          <div class="pl-4"> <a href="https://www.facebook.com/shergioacademy"> <i class="fa fa-facebook"></i>
+              <span>Facebook</span> </a> </div>
+          <div class="pl-4"> <a href=""> <i class="fa fa-twitter"></i> <span>Twitter</span> </a> </div>
+          <div class="pl-4"> <a href=""> <i class="fa fa-youtube"></i> <span>Youtube</span> </a> </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+
+    $(function () {
+      //if ($(window).width() < 950) { $('body').css('display', 'none'); alert('only pc allowed for now'); }
+      //var top= $('#why').scrollTop();
+      //alert(top);
+      //$('#why').scrollTop(55);
+
+
+      //main dropdown menu toggle
+      var isOpened = false;
+      $("#menuToggle").click(function () {
+        if (isOpened === false) {
+          isOpened = true;
+          $("#navlink").animate({ height: "toggle" }, {
+            complete: function () {
+              $(this).attr('style', "");
+              $("#navlink").removeClass("hidden").addClass("block");
+            }
+          });
+          $("#burger").removeClass("block").addClass("hidden");
+          $("#close").removeClass("hidden").addClass("block");
+        }
+        else if (isOpened === true) {
+          isOpened = false;
+          $("#navlink").animate({ height: "toggle" }, {
+            complete: function () {
+              $(this).attr('style', "");
+              $("#navlink").removeClass("block").addClass("hidden");
+            }
+          });
+          $("#close").removeClass("block").addClass("hidden");
+          $("#burger").removeClass("hidden").addClass("block");
+        }
+      });
+
+      //secondary dropdown menu toggle
+      /*used class .menu instead of id because this is going to be a generic code that will handle clicks from all main menu links using id will only make it 
+      possible for one element since ids are unique to elements, except a wild id selector is used. So all main menu items will be given a class of .menu.
+      Before opening any secondary menu, all secondary menu needs to be closed in case any is opened before, before opening the secondary menu.
+      So all secondary menu will have a class of .secMenu.
+      To know which secondary menu to open in response to the corresponding clicked main menu element another attribute "x" with unique value is added to each menu/secMenu 
+      pair. Id is not used as it can only work for one element, class is not used too because it may contain several value and we need to pull that unique value
+      for the menu/secMenu pair when the element is clicked. This has to be done with an attribute with one value as we don't know what we are looking for specifically.
+      So contact main menu and its secondary dropdown menu for example will have a class of contact. To target the secondary menu only selector that target an element with 
+      class: contact and secMenu. If there is any need to target the contact main menu it self, use a selector that target an element with class: and class:
+      Each menu dropdown will be given an id. 
+      The o attribute is added on secMenu to have the value opened or closed to enable a menu link, when clicked, to close its secmenu if it is already opened. */
+
+      //reusable function to close menu since its used more than once
+      function closeSecMenu() {
+        $(".secMenu").removeClass("block").addClass("hidden");
+        $(".secMenu").attr("o", "closed");
+        $("#face").removeClass("block").addClass("hidden");
+      }
+
+
+      $(".menu").click(function () {
+        //get the x attribute of the clicked element
+        var x = $(this).attr('x');
+        //use the x attribute to find the corresponding dropdown menu and get the value of its o attribute
+        var secIsOpened = $(".secMenu[x=" + x + "]").attr("o");
+        //alert(secIsOpened === "closed");
+
+        if (secIsOpened === 'opened') {
+          //if the o attribute has a value of opened then close the menu
+          //close all secondary menu
+          closeSecMenu();
+        }
+        else {
+          //if the o attribute has a value that != opened, then open then close all secmenu and open the corresponding menu (when menu with secmenu is clicked). 
+          //When menu with no secmenu is clicked it will only close all secmenu and there will be no secmenu to close, x variable will probably be undefined
+          //first close all secondary menu
+          closeSecMenu();
+          //open the corresponding secondary menu
+          if (x !== undefined) {
+            //this if is added to prevent the overlay (#face) from coming up when a menu without secmenu is clicked on so it dont block the screen
+            $(".secMenu[x=" + x + "]").removeClass("hidden").addClass("block");
+            $(".secMenu[x=" + x + "]").attr("o", "opened");
+            $("#face").removeClass("hidden").addClass("block");
+          }
+        }
+      });
+
+
+
+      //when the overlay is clicked, close the secMenu
+      $("#face").click(function () {
+        closeSecMenu();
+      });
+      //when the escape button is pressed, close the secMenu
+      $(document).keydown(function (e) {
+        if (e.which == 27) {
+          closeSecMenu();
+        }
+      });
+
+      //test
+      $(".spy").click(function (e) {
+        alert(e.target.getAttribute('h'));
+      });
+      $(".clean[pl=\"l\"]").addClass("bg-red-500");
+
+    })
+  </script>
+</body>
+
+</html>
