@@ -5,6 +5,9 @@
 .inpg{
 
 }
+.first-img{
+  height: 400px;
+}
 #services{
   background-image: url('img/tutor.jpg');
   background-repeat: repeat;
@@ -16,7 +19,7 @@
 #why{
   background-image: url('img/scene.jpg');
   background-repeat: no-repeat;
-  background-position: center -200px;
+  background-position: center ; /* -200px */
   background-size: cover;
   z-index: -21;
 }
@@ -61,19 +64,21 @@ body{
   margin-left: auto;
   margin-right: auto;
   width: 60px;
-  height: 60px;
+  height: 60px; /*
   border-color: rgb(0, 112, 209);
-  border-width: 1px;
+  border-width: 1px;*/
 }
 .arrowdiv{
   display: block;
   width: 200px;
   height: 228px;
   vertical-align: top;
+   /*
   border-color: rgb(0, 112, 209);
-  border-width: 1px;
+  border-width: 1px;*/
   margin-left: -4.5px;
   padding-top: 8px;
+  margin-top: 20px;
 }
 .arr_ico{
   margin-top: 10px;
@@ -83,7 +88,15 @@ body{
   font-size: 14px;
 }
 .col-block{
-  width:400px;
+ 
+}
+.thumb-sec{
+  width: 270px;
+}
+.card{
+  display: block;
+  vertical-align: top;
+  margin-top: 10px;
 }
 footer a:hover{
   color: rgb(0, 112, 209);
@@ -104,7 +117,20 @@ footer a:hover{
 }
 /* less than 639 */
 @media (max-width: 639px){
-
+  .sec-gap{
+    margin-top: 50px;
+  }
+  .black-top-bar{
+    font-size: 15px;
+  }
+  
+  .xxx{
+    display: none;
+  }
+  .col-block{
+    margin-left: auto;
+    margin-right: auto;
+  }
   .foo{
 
   }
@@ -112,10 +138,16 @@ footer a:hover{
     margin-left: auto;
     margin-right: auto;
   }
+  .social-links{
+    margin-top: 20px;
+  }
 }
 
 /* sm */
 @media (min-width: 640px){
+  .col-block{
+    width:400px;
+  }
   .arr-sec{
     width:595.4px;
     display:block;
@@ -123,6 +155,11 @@ footer a:hover{
   .arrowdiv{
     display: inline-block;
   }
+  .inpg{
+    width: 95%;
+  }
+  
+  
 }
 
 /* md */
@@ -139,5 +176,12 @@ footer a:hover{
   }
   .arrowdiv{
     display: inline-block;
+  }
+  .card{
+    display: inline-block;
+    vertical-align: top;
+  }
+  .thumb-sec{
+    width: 100%;
   }
 }
